@@ -25,7 +25,7 @@ test.describe('Flujo de compras del E-Commerce', () => {
     // Test 1: Verificar contador de productos en el carrito.
   test('El carrito debe mostrar el número de items correctos', async () => {
     await inventoryPage.agregarBackpackAlCarrito();
-    await expect(inventoryPage.contadorCarrito).toHaveText('2');
+    await expect(inventoryPage.contadorCarrito).toHaveText('1');
   });
 
   // Test 2: Agregar producto al carrito y compra
