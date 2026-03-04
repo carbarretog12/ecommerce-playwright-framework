@@ -1,14 +1,23 @@
-{
-  "usuarioValido": {
+[
+  {
+    "id": "Usuario Válido",
     "username": "standard_user",
-    "password": "secret_sauce"
+    "password": "secret_sauce",
+    "esperaExito": true,
+    "mensajeError": ""
   },
-  "usuarioBloqueado": {
+  {
+    "id": "Usuario Bloqueado",
     "username": "locked_out_user",
-    "password": "secret_sauce"
+    "password": "secret_sauce",
+    "esperaExito": false,
+    "mensajeError": "Sorry, this user has been locked out"
   },
-  "usuarioInvalido": {
+  {
+    "id": "Usuario Falso",
     "username": "usuario_falso",
-    "password": "password123"
+    "password": "password123",
+    "esperaExito": false,
+    "mensajeError": "Username and password do not match"
   }
-}
+]
