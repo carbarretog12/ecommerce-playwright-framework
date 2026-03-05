@@ -19,7 +19,7 @@ test.describe('Flujo de compras del E-Commerce', () => {
     cartPage = new CartPage(page);
     checkoutPage = new CheckoutPage(page);
     await loginPage.navigate();
-    await loginPage.login(userData[0].username, userData[0].password);
+    await loginPage.login(userData[0].username, process.env.STANDARD_PASSWORD as string);
   });
 
     // Test 1: Verificar contador de productos en el carrito.

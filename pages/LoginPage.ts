@@ -16,7 +16,8 @@ export class LoginPage {
   }
 
   async navigate() {
-    await this.page.goto('https://www.saucedemo.com/');
+    //Página obtenida de BASE_URL de .env en playwright.config.ts
+    await this.page.goto('/');
   }
 
   async login(user: string, pass: string) {

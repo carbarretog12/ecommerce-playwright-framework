@@ -14,7 +14,8 @@ test.describe('Pruebas Dinámicas de Login (Data-Driven)', () => {
       await loginPage.navigate();
       
       // 1. Intento autenticación
-      await loginPage.login(usuario.username, usuario.password);
+      const password = usuario.esperaExito ? process.env.STANDARD_PASSWORD as string : usuario.password;
+      await loginPage.login(usuario.username, password);
 
       // 2. Validación test según ajuste esperado
       if (usuario.esperaExito) {
