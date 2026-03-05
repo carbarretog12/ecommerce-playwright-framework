@@ -20,7 +20,7 @@ El proyecto está estructurado bajo principios sólidos de ingeniería de softwa
 
 ### 1. Clonar el repositorio y preparar el entorno
 ```bash
-git clone [https://github.com/carbarretog12/ecommerce-playwright-framework.git](https://github.com/carbarretog12/ecommerce-playwright-framework)
+git clone https://github.com/carbarretog12/ecommerce-playwright-framework
 cd ecommerce-playwright-framework
 npm install
 npx playwright install --with-deps
