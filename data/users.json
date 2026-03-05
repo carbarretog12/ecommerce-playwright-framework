@@ -2,7 +2,7 @@
   {
     "id": "Usuario Válido",
     "username": "standard_user",
-    "password": "secret_sauce",
+    "password": "leida_desde_env",
     "esperaExito": true,
     "mensajeError": ""
   },
