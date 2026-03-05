@@ -14,12 +14,12 @@ test.describe('Flujo de compras del E-Commerce', () => {
 
   // 0.2. HOOK
   test.beforeEach(async ({ page }) => {
-    const loginPage = new LoginPage(page);
     inventoryPage = new InventoryPage(page);
     cartPage = new CartPage(page);
     checkoutPage = new CheckoutPage(page);
-    await loginPage.navigate();
-    await loginPage.login(userData[0].username, process.env.STANDARD_PASSWORD as string);
+
+    // Navegar DIRECTAMENTE al inventario (ya esta en auth.setup.ts y en playwright.config.ts)
+    await page.goto('/inventory.html');
   });
 
     // Test 1: Verificar contador de productos en el carrito.

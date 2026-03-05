@@ -6,6 +6,9 @@ import usuariosData from '../data/users.json';
 
 test.describe('Pruebas Dinámicas de Login (Data-Driven)', () => {
 
+  // Playwright debe ignorar el sts de autenticado para esta sección, limpiar las cookies y empezar de cero
+  test.use({ storageState: { cookies: [], origins: [] } });
+
   //Test para usuarios de archivo ../data/users.json
   for (const usuario of usuariosData) {
 
